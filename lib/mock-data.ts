@@ -524,3 +524,307 @@ export const MOCK_REVIEW_QUESTIONS = [
     difficulty: "EASY" as const
   }
 ];
+
+export const SCORE_HISTORY = [
+  {
+    id: "hist_1",
+    date: "Apr 15, 2025",
+    label: "Full Mock #1",
+    score: 95.5,
+    maxScore: 200,
+    percentage: 47.75,
+    correct: 104,
+    wrong: 34,
+    skipped: 62,
+    timeTaken: "2h 55m",
+    subjectScores: { Physics: 22, Chemistry: 28, Zoology: 20, Botany: 15.5, MAT: 10 }
+  },
+  {
+    id: "hist_2",
+    date: "Apr 20, 2025",
+    label: "Full Mock #2",
+    score: 91.5,
+    maxScore: 200,
+    percentage: 45.75,
+    correct: 100,
+    wrong: 34,
+    skipped: 66,
+    timeTaken: "2h 48m",
+    subjectScores: { Physics: 20.5, Chemistry: 25, Zoology: 22, Botany: 14, MAT: 10 }
+  },
+  {
+    id: "hist_3",
+    date: "Apr 25, 2025",
+    label: "Full Mock #3",
+    score: 105.75,
+    maxScore: 200,
+    percentage: 52.875,
+    correct: 115,
+    wrong: 37,
+    skipped: 48,
+    timeTaken: "2h 52m",
+    subjectScores: { Physics: 26, Chemistry: 32, Zoology: 24.5, Botany: 16.25, MAT: 7 }
+  },
+  {
+    id: "hist_4",
+    date: "May 1, 2025",
+    label: "Full Mock #4",
+    score: 115.5,
+    maxScore: 200,
+    percentage: 57.75,
+    correct: 125,
+    wrong: 38,
+    skipped: 37,
+    timeTaken: "2h 45m",
+    subjectScores: { Physics: 28.5, Chemistry: 35, Zoology: 26, Botany: 16, MAT: 10 }
+  },
+  {
+    id: "hist_5",
+    date: "May 5, 2025",
+    label: "Full Mock #5",
+    score: 143.25,
+    maxScore: 200,
+    percentage: 71.625,
+    correct: 151,
+    wrong: 31,
+    skipped: 18,
+    timeTaken: "2h 35m",
+    subjectScores: { Physics: 38, Chemistry: 42.5, Zoology: 32, Botany: 21.75, MAT: 9 }
+  },
+  {
+    id: "hist_6",
+    date: "May 8, 2025",
+    label: "Full Mock #6",
+    score: 121.25,
+    maxScore: 200,
+    percentage: 60.625,
+    correct: 132,
+    wrong: 43,
+    skipped: 25,
+    timeTaken: "2h 50m",
+    subjectScores: { Physics: 30.5, Chemistry: 38, Zoology: 28.5, Botany: 15.25, MAT: 9 }
+  },
+  {
+    id: "hist_7",
+    date: "May 10, 2025",
+    label: "Full Mock #7",
+    score: 126.75,
+    maxScore: 200,
+    percentage: 63.375,
+    correct: 137,
+    wrong: 41,
+    skipped: 22,
+    timeTaken: "2h 40m",
+    subjectScores: { Physics: 33.5, Chemistry: 39.5, Zoology: 29.5, Botany: 14.25, MAT: 10 }
+  },
+  {
+    id: "hist_8",
+    date: "May 12, 2025",
+    label: "Full Mock #8",
+    score: 131.5,
+    maxScore: 200,
+    percentage: 65.75,
+    correct: 140,
+    wrong: 34,
+    skipped: 26,
+    timeTaken: "2h 42m",
+    subjectScores: { Physics: 34, Chemistry: 42.5, Zoology: 31.5, Botany: 14.5, MAT: 9 }
+  },
+  {
+    id: "hist_9",
+    date: "May 15, 2025",
+    label: "Full Mock #9",
+    score: 139.25,
+    maxScore: 200,
+    percentage: 69.625,
+    correct: 146,
+    wrong: 27,
+    skipped: 27,
+    timeTaken: "2h 38m",
+    subjectScores: { Physics: 39.5, Chemistry: 43.5, Zoology: 33, Botany: 15.25, MAT: 8 }
+  },
+  {
+    id: "hist_10",
+    date: "May 18, 2025",
+    label: "Full Mock #10",
+    score: 123.75,
+    maxScore: 200,
+    percentage: 61.875,
+    correct: 134,
+    wrong: 41,
+    skipped: 25,
+    timeTaken: "2h 47m",
+    subjectScores: { Physics: 29, Chemistry: 36, Zoology: 25.75, Botany: 21.5, MAT: 11.5 }
+  }
+];
+
+export const ANALYTICS_STATS = {
+  totalTestsTaken: 10,
+  totalQuestionsAttempted: 1750,
+  overallAccuracy: 71.4,
+  averageScore: 118.6,
+  bestScore: 143.25,
+  bestScoreDate: "May 5, 2025",
+  worstScore: 91.5,
+  averageTimeTaken: "2h 47m",
+  currentStreak: 3,
+  longestStreak: 7,
+  strongestSubject: "Chemistry",
+  weakestSubject: "Botany",
+  totalMarksLostToNegative: 87.5,
+  subjectAverages: {
+    Physics:   { avg: 34.2, maxPossible: 50, accuracy: 68.4 },
+    Chemistry: { avg: 39.1, maxPossible: 50, accuracy: 78.2 },
+    Zoology:   { avg: 28.8, maxPossible: 40, accuracy: 72.0 },
+    Botany:    { avg: 22.4, maxPossible: 40, accuracy: 56.0 },
+    MAT:       { avg: 13.9, maxPossible: 20, accuracy: 69.5 }
+  },
+  weakChapters: [
+    { subject: "Botany",    chapter: "Plant Hormones", accuracy: 38, attempted: 21 },
+    { subject: "Botany",    chapter: "Photosynthesis", accuracy: 44, attempted: 18 },
+    { subject: "Physics",   chapter: "Thermodynamics", accuracy: 46, attempted: 24 },
+    { subject: "Physics",   chapter: "Electrostatics", accuracy: 51, attempted: 19 },
+    { subject: "Chemistry", chapter: "Organic Reactions", accuracy: 53, attempted: 22 }
+  ]
+};
+
+export const LEADERBOARD = [
+  { rank: 1, name: "Sujata Sharma", score: 189.5, testsCount: 15, accuracy: 92.5, streak: 12, badge: "Top 1%" },
+  { rank: 2, name: "Bikash Thapa", score: 185.25, testsCount: 18, accuracy: 89.2, streak: 8, badge: "Consistent" },
+  { rank: 3, name: "Priya Maharjan", score: 182.0, testsCount: 12, accuracy: 90.1, streak: 5, badge: null },
+  { rank: 4, name: "Aarav Shrestha", score: 168.75, testsCount: 22, accuracy: 86.4, streak: 14, badge: "Consistent" },
+  { rank: 5, name: "Riya Karki", score: 165.5, testsCount: 9, accuracy: 84.8, streak: 2, badge: null },
+  { rank: 6, name: "Dipesh Adhikari", score: 162.25, testsCount: 11, accuracy: 81.5, streak: 4, badge: null },
+  { rank: 7, name: "Sneha Pandey", score: 159.0, testsCount: 14, accuracy: 83.0, streak: 6, badge: null },
+  { rank: 8, name: "Nitesh Gurung", score: 155.5, testsCount: 10, accuracy: 79.2, streak: 3, badge: null },
+  { rank: 9, name: "Kritika Magar", score: 152.75, testsCount: 19, accuracy: 80.5, streak: 9, badge: "Consistent" },
+  { rank: 10, name: "Roshan Tamang", score: 151.0, testsCount: 8, accuracy: 78.4, streak: 1, badge: null },
+  { rank: 11, name: "Sita Poudel", score: 148.5, testsCount: 16, accuracy: 77.0, streak: 7, badge: null },
+  { rank: 12, name: "Hari Basnet", score: 144.25, testsCount: 13, accuracy: 76.5, streak: 2, badge: null },
+  { rank: 13, name: "Alina Chhetri", score: 130.0, testsCount: 7, accuracy: 75.1, streak: 0, badge: null },
+  { rank: 14, name: "Guest Student", score: 123.75, testsCount: 10, accuracy: 76.6, streak: 3, badge: null },
+  { rank: 15, name: "Manoj Khadka", score: 142.0, testsCount: 12, accuracy: 72.8, streak: 1, badge: null },
+  { rank: 16, name: "Nisha Gautam", score: 140.5, testsCount: 11, accuracy: 74.0, streak: 5, badge: null },
+  { rank: 17, name: "Binod Rai", score: 138.25, testsCount: 20, accuracy: 72.5, streak: 11, badge: "Consistent" },
+  { rank: 18, name: "Puja Limbu", score: 135.0, testsCount: 9, accuracy: 70.8, streak: 2, badge: null },
+  { rank: 19, name: "Kiran Bista", score: 132.75, testsCount: 14, accuracy: 69.5, streak: 4, badge: null },
+  { rank: 20, name: "Rebika Shrestha", score: 130.5, testsCount: 15, accuracy: 68.2, streak: 3, badge: null }
+];
+
+export const BOOKMARKED_QUESTIONS = [
+  ...MOCK_REVIEW_QUESTIONS,
+  {
+    id: "rev_9",
+    questionNumber: 90,
+    subject: "Physics",
+    chapter: "Electrostatics",
+    questionText: "The electric potential at a point on the equatorial line of an electric dipole is:",
+    options: {
+      A: "Maximum",
+      B: "Zero",
+      C: "Minimum",
+      D: "Depends on the dipole moment"
+    },
+    correctAnswer: "B" as OptionKey,
+    selectedAnswer: "A" as OptionKey,
+    isCorrect: false,
+    explanation: "The electric potential is a scalar quantity. On the equatorial line, the distance to the positive and negative charges is the same, so their potentials cancel each other out, making the net potential zero.",
+    marksAwarded: -0.25,
+    year: 2021,
+    difficulty: "EASY" as const
+  },
+  {
+    id: "rev_10",
+    questionNumber: 132,
+    subject: "Zoology",
+    chapter: "Nervous System",
+    questionText: "The part of the human brain that controls body temperature is:",
+    options: {
+      A: "Cerebrum",
+      B: "Cerebellum",
+      C: "Hypothalamus",
+      D: "Medulla Oblongata"
+    },
+    correctAnswer: "C" as OptionKey,
+    selectedAnswer: "D" as OptionKey,
+    isCorrect: false,
+    explanation: "The hypothalamus, located at the base of the brain, plays a crucial role in regulating body temperature, hunger, thirst, and circadian rhythms.",
+    marksAwarded: -0.25,
+    year: 2020,
+    difficulty: "MEDIUM" as const
+  },
+  {
+    id: "rev_11",
+    questionNumber: 150,
+    subject: "Botany",
+    chapter: "Ecology",
+    questionText: "The 10% law for energy transfer in food chains was proposed by:",
+    options: {
+      A: "Lindeman",
+      B: "Tansley",
+      C: "Odum",
+      D: "Elton"
+    },
+    correctAnswer: "A" as OptionKey,
+    selectedAnswer: "A" as OptionKey,
+    isCorrect: true,
+    explanation: "Raymond Lindeman proposed the 10% law, which states that only about 10% of the energy from one trophic level is transferred to the next.",
+    marksAwarded: 1.0,
+    year: 2019,
+    difficulty: "MEDIUM" as const
+  },
+  {
+    id: "rev_12",
+    questionNumber: 185,
+    subject: "MAT",
+    chapter: "Figure Matrix",
+    questionText: "Which figure completes the matrix?",
+    options: {
+      A: "Figure A",
+      B: "Figure B",
+      C: "Figure C",
+      D: "Figure D"
+    },
+    correctAnswer: "C" as OptionKey,
+    selectedAnswer: null,
+    isCorrect: null,
+    explanation: "Based on the pattern in the rows and columns, the number of lines increases by one in each step. Figure C follows this pattern.",
+    marksAwarded: 0.0,
+    year: 2023,
+    difficulty: "HARD" as const
+  }
+].map((q, i) => ({
+  ...q,
+  bookmarkedAt: "May 8, 2025",
+  testId: "mock_test_001",
+  tags: i % 2 === 0 ? ["Important"] : ["Revisit", "Hard"]
+}));
+
+export const PRACTICE_SUBJECTS = [
+  { id: "sub_1", name: "Physics", questionCount: 842, chapters: 12, color: "blue" },
+  { id: "sub_2", name: "Chemistry", questionCount: 796, chapters: 14, color: "green" },
+  { id: "sub_3", name: "Zoology", questionCount: 614, chapters: 10, color: "violet" },
+  { id: "sub_4", name: "Botany", questionCount: 581, chapters: 11, color: "emerald" },
+  { id: "sub_5", name: "MAT", questionCount: 203, chapters: 5, color: "amber" }
+];
+
+export const PRACTICE_QUESTION = {
+  id: "prac_1",
+  questionNumber: 1,
+  subject: "Botany",
+  chapter: "Genetics",
+  questionText: "If a DNA molecule contains 20% adenine, what is the percentage of guanine?",
+  options: {
+    A: "20%",
+    B: "30%",
+    C: "40%",
+    D: "60%"
+  },
+  correctAnswer: "B" as OptionKey,
+  selectedAnswer: null,
+  isCorrect: null,
+  explanation: "According to Chargaff's rule, A = T and G = C. If Adenine (A) is 20%, then Thymine (T) is 20%. Total A+T = 40%. The remaining 60% is G+C. Therefore, Guanine (G) = 60% / 2 = 30%.",
+  marksAwarded: 0.0,
+  year: 2021,
+  difficulty: "MEDIUM" as const
+};

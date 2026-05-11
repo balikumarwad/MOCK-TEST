@@ -94,9 +94,8 @@ export default function ExamPage() {
     }
   };
 
-  const handleSubmit = () => {
-    setIsSubmitDialogOpen(false);
-    router.push(`/test/result/${MOCK_TEST_CONFIG.testId}`);
+  const handleSubmit = (e?: React.MouseEvent) => {
+    window.location.href = `/test/result/${MOCK_TEST_CONFIG.testId}`;
   };
 
   const answeredCount = Object.keys(answersMap).length;

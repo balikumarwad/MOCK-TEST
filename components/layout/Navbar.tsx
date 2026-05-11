@@ -1,22 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-if (typeof window !== "undefined") {
-  // @ts-ignore
-  if (!window.__darkreaderPatchApplied) {
-    // @ts-ignore
-    window.__darkreaderPatchApplied = true;
-    const defaultError = console.error;
-    console.error = (...args) => {
-      if (typeof args[0] === "string" && args[0].includes("data-darkreader-inline-stroke")) {
-        return;
-      }
-      defaultError.apply(console, args);
-    };
-  }
-}
-
+import { useState, useEffect } from "react";
 import { Moon, Sun, Menu, Stethoscope, Flame } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";

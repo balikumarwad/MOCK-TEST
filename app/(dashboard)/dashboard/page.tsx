@@ -14,7 +14,7 @@ export default function DashboardPage() {
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">Ready for CEE 2025?</h1>
           <p className="text-blue-100 flex items-center gap-2">
             <span className="inline-flex h-2 w-2 rounded-full bg-amber-400 animate-pulse"></span>
-            You're on a 3-day streak. Keep it up!
+            You&apos;re on a 3-day streak. Keep it up!
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Button asChild className="bg-white text-blue-700 hover:bg-blue-50 font-medium">
